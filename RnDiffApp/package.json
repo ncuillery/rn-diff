@@ -6,7 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
-    "react": "15.3.1",
-    "react-native": "0.37.0"
+    "react": "15.4.0-rc.4",
+    "react-native": "0.38.0"
   }
 }
