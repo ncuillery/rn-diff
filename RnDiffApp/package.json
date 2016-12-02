@@ -7,6 +7,6 @@
   },
   "dependencies": {
     "react": "15.4.0-rc.4",
-    "react-native": "0.38.0"
+    "react-native": "0.39.0"
   }
 }
