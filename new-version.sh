@@ -27,7 +27,7 @@ npm install
 rm package-lock.json
 
 # Launch RN upgrade and automatically overwrite all files
-echo "a" | react-native upgrade
+react-native upgrade
 
 cd ..
 
