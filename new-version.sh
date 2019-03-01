@@ -16,9 +16,9 @@ cd RnDiffApp
 # Save package.json for later use (for not being taken into account when computing stats)
 cp package.json ../package.json.temp
 
-# Replace versions in package.json
-sed -i "" "s/\"react\": \"[0-9]*\.[0-9]*\.[0-9]*\",/\"react\": \"${reactVersion}\",/" ./package.json
-sed -i "" "s/\"react-native\": \"[0-9]*\.[0-9]*\.[0-9]*\"/\"react-native\": \"${newVersion}\"/" ./package.json
+# Replace versions in package.json (WARNING: the -E option is specific to BSD, replace with -r if you don't use MacOS)
+sed -E -i "" "s/\"react\": \"[0-9]*\.[0-9]*\.[0-9]*(-[^\"]*)?\",/\"react\": \"${reactVersion}\",/" ./package.json
+sed -E -i "" "s/\"react-native\": \"[0-9]*\.[0-9]*\.[0-9]*(-[^\"]*)?\"/\"react-native\": \"${newVersion}\"/" ./package.json
 
 # Install dependencies
 npm install
