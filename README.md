@@ -1,5 +1,8 @@
 # RN diff
 
+### Thank you for using and supporting rn-diff!
+## For all your upgrading needs, visit the [react-native-community repo](https://github.com/react-native-community/rn-diff-purge).
+
 This repository exposes an untouched React Native app generated with the CLI
 `react-native init RnDiffApp` and upgraded with the CLI `react-native upgrade`
 after each version of React Native.
